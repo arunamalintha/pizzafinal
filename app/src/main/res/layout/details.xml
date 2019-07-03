@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/pizza3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv"
+
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="47dp"
+                    />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F30707"
+                    android:textSize="25dp"
+                    android:visibility="visible"
+                    android:text="name"
+                    android:textStyle="bold"
+                    />
+
+            <TextView
+                android:id="@+id/tvdescrip"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="description"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="italic"
+
+                />
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    android:text="price"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textStyle="bold"
+                    android:textColor="#F08080"
+                    android:textSize="20dp"
+                    />
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/elegantbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:initialNumber="0"
+                    app:finalNumber="30"
+                    android:padding="10dp"
+                    android:layout_gravity="center">
+
+                </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            <TextView
+                android:id="@+id/tvtotpri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Totalt Price Rs. 0"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/crtbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="600dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="ADD TO CART"
+                    android:textColor="#FFFFFF"
+
+                    />
+
+                <Button
+                    android:id="@+id/bckbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="600dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="BACK"
+                    android:textColor="#FFFFFF"
+
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:onClick="openCart"
+                    android:id="@+id/cart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginTop="650dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
